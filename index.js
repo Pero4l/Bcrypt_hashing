@@ -9,7 +9,7 @@ const hashedText = async (text) => {
   const check = await bcrypt.compare(text, hashedText)
 
  console.log(`Hashed Text = ${hashedText}`);
- console.log(`Compare Hashed ${text} is = ${check}`);
+ console.log(`Compare Hashed of ${hashedText} to ${text} is = ${check}`);
  
 };
 
